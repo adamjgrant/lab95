@@ -22,9 +22,13 @@ gulp.task('build', ['compile:jade', 'compile:coffee', 'compile:sass', 'copy']);
 gulp.task('copy', function() {
   gulp.src(['./lib/img/**/*'])
     .pipe(shell([
-      'mkdir -p ./public/img'
+      'mkdir -p ./public/img',
+      'mkdir -p ./public/css',
     ]))
     .pipe(gulp.dest('./public/img'));
+
+  gulp.src(['../application/public/css/style.css'])
+    .pipe(gulp.dest('./public/css'));
   
   gulp.src(['./lib/**/*.ico'])
     .pipe(gulp.dest('./public'));
