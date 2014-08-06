@@ -1,0 +1,38 @@
+.piece {
+  display: none;
+  margin-bottom: 25px;
+  overflow: hidden; }
+
+.bubble {
+  border: 1px solid #EEE;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden; }
+  .bubble .bubble-heading {
+    font-weight: bold; }
+  .bubble .bubble-vote {
+    width: 100px;
+    float: left; }
+  .bubble .bubble-vote-arrow
+  , .bubble .bubble-vote-score {
+    display: block;
+    margin: 0px auto;
+    text-align: center; }
+  .bubble .bubble-vote-score {
+    margin: 10px inherit; }
+  .bubble .bubble-vote-arrow {
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 0px;
+    background-size: 25px 25px; }
+    .bubble .bubble-vote-arrow.bubble-vote-arrow_up {
+      background-image: url("/assets/arrow-up.png"); }
+    .bubble .bubble-vote-arrow.bubble-vote-arrow_down {
+      background-image: url("/assets/arrow-down.png"); }
+
+.spacious li {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.spacious > li {
+  margin-bottom: 50px; }

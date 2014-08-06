@@ -31,12 +31,6 @@ gulp.task('copy', function() {
 
   gulp.src(['./lib/sitemap.xml'])
     .pipe(gulp.dest('./public'));
-
-  gulp.src(['./lib/bower_components/**/*'])
-    .pipe(shell([
-      'mkdir -p ./public/bower_components'
-    ]))
-    .pipe(gulp.dest('./public/bower_components'));
 })
 
 // Compilers
